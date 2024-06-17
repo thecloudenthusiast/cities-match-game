@@ -1,14 +1,14 @@
 CARD MATCHING GAME
 
-Description
-A simple card flipping game where user memorizes the card in order to match the pairs. The player/user clicks the cards (which are images of famous cities) one at a time and try to match them. The cards disappear whenever a match is made until all the cards are matched- no blank image/card.
+Description:
+- A simple card flipping game where user memorizes the card in order to match the pairs. The player/user clicks the cards (which are images of famous cities) one at a time and try to match them. The cards disappear whenever a match is made until all the cards are matched- no blank image/card.
 
-Resources
+Resources:
 - Card matching game created with continuous deployment using AWS Code Pipeline and S3. 
 - The code for the game is hosted in GitHub and an AWS S3 bucket was created with static web hosting enabled.
 - AWS Code Pipeline is then used to create a continuous deployment pipeline which automatically deploys the code whenever changes are made.
 
-Requirements
+Requirements:
 1. A GitHub account
 2. An AWS Account - Free tier is okay
 3. Files needed
@@ -17,10 +17,10 @@ Requirements
 - index.html     ---> For web browser view for the game
 - images 	 ---> It is recommended that you resize your images as .PNG file with 393 x 308 (height x width)
 
-Steps to create the game
+Steps to create the game:
 NOTE:  If you the above stated files in a GitHub repository specifically created for the game, you can skip to Step 3. 
 
-Step 1 - Make a local repository
+STEP 1 - Make a local repository
 - Create a Folder on your desktop => name it => add your files into the folder
 - alternatively, you can use VSCode to create and edit the files/images
 - When everything is ready, make sure to install Git on your computer 
@@ -31,7 +31,9 @@ Step 1 - Make a local repository
 	git commit -m “Initial commit message” 	---> All files are now in the repository
 	git status				---> You will get a response, “On branch master nothing to commit, working tree clean". This shows your local repository is finally created.
 
-Step 2 - Push your files to a GitHub repository
+
+
+STEP 2 - Push your files to a GitHub repository
 - Go to GitHub and open your profile page
 - Create a New Repository with the SAME NAME as the local repository. 
 - Copy the HTTPS Key of that created repository. It can be found under the dropdown of "CODE" -green colored (clearly visible on the page).
@@ -41,7 +43,9 @@ Step 2 - Push your files to a GitHub repository
 	git push origin main 
 or	git push -u origin main									---> To PUSH all the files to the GitHub repository 
 
-Step 3 - create S3 bucket in AWS
+
+
+STEP 3 - Create S3 bucket in AWS
 - Give a name
 - Enable static website option
 - Enable necessary permissions on the bucket => Turn OFF "block public access" 
@@ -64,9 +68,10 @@ Step 3 - create S3 bucket in AWS
     ]
 } 
 **********************************************
-- Upload your files (above)
 
-Step 4 - Set up Code Pipeline
+
+
+STEP 4 - Set up Code Pipeline
 - Navigate and open AWS Code Pipeline
 - create pipeline => 
 *name it 
@@ -89,7 +94,9 @@ Step 4 - Set up Code Pipeline
 - REVIEW all the configurations => CREATE PIPELINE
 - After deployment, you should see the stages shown as "Succeeded" for both Source and Deploy.
 
-Step 5 - Go back to your AWS S3 bucket
+
+
+STEP 5 - Go back to your AWS S3 bucket
 - Click properties tab => static website hosting => click on the endpoint
 - A new web browser page will open automatically. The game is ready to be played
 
