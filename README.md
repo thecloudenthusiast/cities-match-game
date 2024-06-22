@@ -103,4 +103,6 @@ STEP 5 - Go back to your AWS S3 bucket
 Step 6 - Making changes on GitHub to reflect in the AWS Code Pipeline
 - Go to your GitHub page => click the index.html file => make some edit => commit the changes
 - AWS Code pipeline will automatically detect the changes and redeploy the pipeline.
-- Refresh the web browser, you should the edit.
+- Refresh the web browser, you should see the changes.
+
+  P.S: Full credit goes to TinyTechnicalTutorials for the original source codes.
