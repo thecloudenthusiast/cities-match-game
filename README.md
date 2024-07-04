@@ -3,6 +3,9 @@ CARD MATCHING GAME
 Description:
 - A simple card flipping game where user memorizes the card in order to match the pairs. The player/user clicks the cards (which are images of famous cities) one at a time and try to match them. The cards disappear whenever a match is made until all the cards are matched- no blank image/card.
 
+Objective:
+- The card game is designed to test and enhance a player's memory and concentration skills through finding a match for a card already flipped - one at a time.
+  
 Resources:
 - Card matching game created with continuous deployment using AWS Code Pipeline and S3. 
 - The code for the game is hosted in GitHub and an AWS S3 bucket was created with static web hosting enabled.
